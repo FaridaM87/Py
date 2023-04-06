@@ -1,0 +1,14 @@
+from random import randint
+arrayNum = int(input("Размер массива: "))
+array = []
+for _ in range(arrayNum):
+   array.append(randint(0,8))
+print(array)
+
+number = int(input("Введите число: "))
+result = 0
+
+for i in range(arrayNum):
+    if number == array[i]:
+        result += 1
+print(f"Число {number} встречается {result} раз")
